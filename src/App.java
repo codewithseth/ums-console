@@ -15,24 +15,33 @@ public class App {
         int menu;
         
         do {
-            System.out.println("1. Manage University");
-            System.out.println("2. Manage Category");
-            System.out.println("3. Manage Subject");
-            System.out.println("4. Manage Teacher");
-            System.out.println("5. Manage Student");
-            System.out.println("6. Manage Address");
-            System.out.println("0. Exit");
-            System.out.print("Select Menu: ");
+            System.out.println("========================================");
+            System.out.println("      UNIVERSITY MANAGEMENT SYSTEM      ");
+            System.out.println("========================================");
+            System.out.println();
+            System.out.println(" [1]  Manage University");
+            System.out.println(" [2]  Manage Category");
+            System.out.println(" [3]  Manage Subject");
+            System.out.println(" [4]  Manage Teacher");
+            System.out.println(" [5]  Manage Student");
+            System.out.println(" [6]  Manage Address");
+            System.out.println();
+            System.out.println(" [0]  Exit");
+            System.out.println();
+            System.out.print(" Select Menu (0-6): ");
             menu = scanner.nextInt();
 
             switch (menu) {
                 case 1:
-                    System.out.println("---------------------");
-                    System.out.println("University Management");
-                    System.out.println("---------------------");
-                   
+                    System.out.println("========================================");
+                    System.out.println("      UNIVERSITY MANAGEMENT SYSTEM      ");
+                    System.out.println("========================================");
+                    System.out.println();
+                    System.out.println("      University Management");
+                    System.out.println("========================================");
+
                     int uniMenu;
-                    
+
                     do {
                         displayEntityMenu("University");
                         uniMenu = scanner.nextInt();
@@ -58,10 +67,13 @@ public class App {
                                 System.out.println("Delete University");
                                 System.out.println("---------------------");
                                 break;
+                            case 0:
+                                System.out.println("Returning to main menu...");
+                                break;
                             default:
                                 System.out.println("---------------------");
                                 System.out.println("Invalid Menu!");
-                                System.out.println("Please choose from 1 to 4");
+                                System.out.println("Please choose from 1 to 4 or 0 to return");
                                 System.out.println("---------------------");
                                 break;
                         }
@@ -69,12 +81,15 @@ public class App {
 
                     break;
                 case 2:
-                    System.out.println("---------------------");
-                    System.out.println("Category Management");
-                    System.out.println("---------------------");
+                    System.out.println("========================================");
+                    System.out.println("      UNIVERSITY MANAGEMENT SYSTEM      ");
+                    System.out.println("========================================");
+                    System.out.println();
+                    System.out.println("      Category Management");
+                    System.out.println("========================================");
 
                     int catMenu;
-                    
+
                     do {
                         displayEntityMenu("Category");
                         catMenu = scanner.nextInt();
@@ -100,21 +115,27 @@ public class App {
                                 System.out.println("Delete Category");
                                 System.out.println("---------------------");
                                 break;
+                            case 0:
+                                System.out.println("Returning to main menu...");
+                                break;
                             default:
                                 System.out.println("---------------------");
                                 System.out.println("Invalid Menu!");
-                                System.out.println("Please choose from 1 to 4");
+                                System.out.println("Please choose from 1 to 4 or 0 to return");
                                 System.out.println("---------------------");
                                 break;
                         }
-                    } while (catMenu !=0);
+                    } while (catMenu != 0);
 
                     break;
                 case 3:
-                    System.out.println("---------------------");
-                    System.out.println("Subject Management");
-                    System.out.println("---------------------");
-                    
+                    System.out.println("========================================");
+                    System.out.println("      UNIVERSITY MANAGEMENT SYSTEM      ");
+                    System.out.println("========================================");
+                    System.out.println();
+                    System.out.println("      Subject Management");
+                    System.out.println("========================================");
+
                     int subjMenu;
 
                     do {
@@ -142,20 +163,26 @@ public class App {
                                 System.out.println("Delete Subject");
                                 System.out.println("---------------------");
                                 break;
+                            case 0:
+                                System.out.println("Returning to main menu...");
+                                break;
                             default:
                                 System.out.println("---------------------");
                                 System.out.println("Invalid Menu!");
-                                System.out.println("Please choose from 1 to 4");
+                                System.out.println("Please choose from 1 to 4 or 0 to return");
                                 System.out.println("---------------------");
                                 break;
                         }
                     } while (subjMenu != 0);
-                    
+
                     break;
                 case 4:
-                    System.out.println("---------------------");
-                    System.out.println("Teacher Management");
-                    System.out.println("---------------------");
+                    System.out.println("========================================");
+                    System.out.println("      UNIVERSITY MANAGEMENT SYSTEM      ");
+                    System.out.println("========================================");
+                    System.out.println();
+                    System.out.println("      Teacher Management");
+                    System.out.println("========================================");
 
                     int teacherMenu;
 
@@ -184,30 +211,26 @@ public class App {
                                 System.out.println("Delete Teacher");
                                 System.out.println("---------------------");
                                 break;
+                            case 0:
+                                System.out.println("Returning to main menu...");
+                                break;
                             default:
                                 System.out.println("---------------------");
                                 System.out.println("Invalid Menu!");
-                                System.out.println("Please choose from 1 to 4");
+                                System.out.println("Please choose from 1 to 4 or 0 to return");
                                 System.out.println("---------------------");
                                 break;
                         }
                     } while (teacherMenu != 0);
 
                     break;
-                /* case 5:
-                    System.out.println("---------------------");
-                    System.out.println("Student Management");
-                    System.out.println("---------------------");
-                    break;
-                case 6:
-                    System.out.println("---------------------");
-                    System.out.println("Address Management");
-                    System.out.println("---------------------");
-                    break; */
                 case 5:
-                    System.out.println("---------------------");
-                    System.out.println("Student Management");
-                    System.out.println("---------------------");
+                    System.out.println("========================================");
+                    System.out.println("      UNIVERSITY MANAGEMENT SYSTEM      ");
+                    System.out.println("========================================");
+                    System.out.println();
+                    System.out.println("      Student Management");
+                    System.out.println("========================================");
 
                     int studentMenu;
 
@@ -236,10 +259,13 @@ public class App {
                                 System.out.println("Delete Student");
                                 System.out.println("---------------------");
                                 break;
+                            case 0:
+                                System.out.println("Returning to main menu...");
+                                break;
                             default:
                                 System.out.println("---------------------");
                                 System.out.println("Invalid Menu!");
-                                System.out.println("Please choose from 1 to 4");
+                                System.out.println("Please choose from 1 to 4 or 0 to return");
                                 System.out.println("---------------------");
                                 break;
                         }
@@ -247,9 +273,12 @@ public class App {
 
                     break;
                 case 6:
-                    System.out.println("---------------------");
-                    System.out.println("Address Management");
-                    System.out.println("---------------------");
+                    System.out.println("========================================");
+                    System.out.println("      UNIVERSITY MANAGEMENT SYSTEM      ");
+                    System.out.println("========================================");
+                    System.out.println();
+                    System.out.println("      Address Management");
+                    System.out.println("========================================");
 
                     int addressMenu;
 
@@ -278,10 +307,13 @@ public class App {
                                 System.out.println("Delete Address");
                                 System.out.println("---------------------");
                                 break;
+                            case 0:
+                                System.out.println("Returning to main menu...");
+                                break;
                             default:
                                 System.out.println("---------------------");
                                 System.out.println("Invalid Menu!");
-                                System.out.println("Please choose from 1 to 4");
+                                System.out.println("Please choose from 1 to 4 or 0 to return");
                                 System.out.println("---------------------");
                                 break;
                         }
